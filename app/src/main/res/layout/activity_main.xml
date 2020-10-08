@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tab_bar">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/tabGray">
+
+        <RadioButton
+            android:id="@+id/rbb_1"
+            android:drawableTop="@drawable/home_default"
+            android:text="@string/item_home"
+            style="@style/tab_bottom"/>
+
+        <RadioButton
+            android:id="@+id/rbb_2"
+            android:drawableTop="@drawable/wifi_default"
+            android:text="@string/item_wifi"
+            style="@style/tab_bottom"/>
+
+        <RadioButton
+            android:id="@+id/rbb_3"
+            android:drawableTop="@drawable/me_default"
+            android:text="@string/item_me"
+            style="@style/tab_bottom"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

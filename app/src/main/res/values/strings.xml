@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WIFI Analysis</string>
+
+    <string name="item_home">HOME</string>
+    <string name="item_wifi">WIFI</string>
+    <string name="item_me">ME</string>
+
+</resources>

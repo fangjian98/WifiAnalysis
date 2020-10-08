@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/wifi_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_toEndOf="@+id/wifi_image"/>
+
+        <TextView
+            android:id="@+id/wifi_bssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/wifi_ssid" />
+
+        <TextView
+            android:id="@+id/wifi_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/wifi_image"
+            android:layout_below="@+id/wifi_ssid" />
+
+        <TextView
+            android:id="@+id/wifi_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/wifi_level"
+            android:layout_below="@+id/wifi_ssid"/>
+
+        <TextView
+            android:id="@+id/wifi_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/wifi_frequency"
+            android:layout_below="@id/wifi_ssid"/>
+
+        <TextView
+            android:id="@+id/wifi_channelWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/wifi_channel"
+            android:layout_below="@id/wifi_ssid"/>
+
+        <TextView
+            android:id="@+id/wifi_capabilies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wifi_level"/>
+
+        <ImageView
+            android:id="@+id/wifi_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/wifi_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+</LinearLayout>
