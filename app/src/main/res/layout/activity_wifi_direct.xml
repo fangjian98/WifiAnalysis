@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".WifiDirectActivity">
+    android:orientation="vertical">
 
     <Button
+        android:id="@+id/send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="发送文件"
-        android:onClick="sendFile"/>
+        android:text="发送文件"/>
+
     <Button
+        android:id="@+id/receiver"
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="接收文件"
-        android:onClick="receiveFile"/>
+        android:text="接收文件"/>
 
 </LinearLayout>

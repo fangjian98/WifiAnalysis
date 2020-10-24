@@ -23,7 +23,6 @@
         <activity android:name=".activity.SendFileActivity" />
         <activity android:name=".activity.ReceiveFileActivity" />
         <activity android:name=".activity.BaseActivity" />
-        <activity android:name=".WifiDirectActivity" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
